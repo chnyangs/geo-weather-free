@@ -4,7 +4,7 @@
   "description": "easily get weather and geo-location information by address.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/chnyangs/geo-weather-free/issues"
   },
-  "homepage": "https://github.com/chnyangs/geo-weather-free#readme"
+  "homepage": "https://github.com/chnyangs/geo-weather-free#readme",
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "dependencies": {
+    "mocha": "^7.1.2",
+    "validator": "^13.0.0",
+    "postman-request": "^2.88.1-postman.22",
+    "chalk": "^4.0.0",
+    "yargs": "^15.3.1"
+  }
 }
