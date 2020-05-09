@@ -1,0 +1,25 @@
+{
+  "name": "geo-weather-free",
+  "version": "1.0.0",
+  "description": "easily get weather and geo-location information by address.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chnyangs/geo-weather-free.git"
+  },
+  "keywords": [
+    "geo",
+    "location",
+    "weather",
+    "free"
+  ],
+  "author": "chnyangs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chnyangs/geo-weather-free/issues"
+  },
+  "homepage": "https://github.com/chnyangs/geo-weather-free#readme"
+}
