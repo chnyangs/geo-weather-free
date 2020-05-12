@@ -179,3 +179,4 @@ $RECYCLE.BIN/
 package-lock.json
 
 ### Project specific entries ###
+__test__
