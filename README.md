@@ -3,16 +3,12 @@
 Based on the free API WeatherStack and MapBox
 
 # Update History
-[V1.0.3](#V1.0.3 Updates)
+[V1.0.3](#V1.0.3)
 
 # Features
 
 * Get coordinate by address.
 * Get weather information by coordinate.
-
-# Update History
-
-[1.0.3](#V1.0.3)
 
 # Install
 <code>$ npm i geo-weather-free</code>
