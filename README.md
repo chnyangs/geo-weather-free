@@ -7,6 +7,10 @@ Based on the free API WeatherStack and MapBox
 * Get coordinate by address.
 * Get weather information by coordinate.
 
+# Update History
+
+[1.0.3](#V1.0.3)
+
 # Install
 <code>$ npm i geo-weather-free</code>
 
@@ -99,7 +103,7 @@ weather.GetWeather({coordinate:'your coordinate' api_key:'your weather api key'}
 }
 </pre>
 
-# V1.0.3 Updates
+# V1.0.3
 * 1. Return value for <code>GetGeoLocation</code> with <code>features</code> json object.
 <pre>
 {
