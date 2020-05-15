@@ -12,9 +12,12 @@ const GetWeather = (data,callback)=>{
             json:true
         }, (error,response) =>{
             if(error){
-                callback("WEATHER RETRIEVING ERROR");
+                callback("SERVER ERROR",undefined);
+            }else if(response.body.error){
+                callback(response.body.error,undefined);
+            }else{
+                callback(undefined,response.body);
             }
-            callback(undefined,response.body);
         }) 
     }else{
        if(!validator.isCoordinate(coordinate)){
@@ -35,21 +38,23 @@ const GetGeoLocation = (data,callback) =>{
             json:true
         }, (error,response) =>{
             if(error){
-                console.log('service error');
-            }else if(response.body.features.length===0){
-                console.log('unable to find location.');
+                callback('SERVER ERROR',undefined);
+            }else if(!response.body.features){
+                callback({message:response.body.message},undefined);
             }
             else{
-                console.log(response.body)
                 const lat = response.body.features[0].center[1];
                 const lon = response.body.features[0].center[0];
                 callback(undefined,{
                     latitude:lat,
                     longitude: lon,
-                    location: response.body.features[0].place_name
+                    location: response.body.features[0].place_name,
+                    features: response.body.features[0]
                 });
             }
         })
+    }else{
+        callback('INVALID API KEY',undefined)
     }
 }
 

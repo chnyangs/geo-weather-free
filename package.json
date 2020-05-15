@@ -1,6 +1,6 @@
 {
   "name": "geo-weather-free",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "easily get weather and geo-location information by address.",
   "main": "index.js",
   "scripts": {

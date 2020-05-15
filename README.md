@@ -98,3 +98,33 @@ weather.GetWeather({coordinate:'your coordinate' api_key:'your weather api key'}
   }
 }
 </pre>
+
+# V1.0.3 Updates
+* 1. Return value for <code>GetGeoLocation</code> with <code>features</code> json object.
+<pre>
+{
+  latitude: -37.91063,
+  longitude: 145.13360699999998,
+  location: 'Monash University Clayton Campus, Wellington Rd, Melbourne, Victoria 3168, Australia',
+  features: {
+    id: 'poi.438086709409',
+    type: 'Feature',
+    place_type: [ 'poi' ],
+    relevance: 1,
+    properties: {
+      landmark: true,
+      wikidata: 'Q6898241',
+      address: 'Wellington Rd',
+      category: 'college, university',
+      maki: 'college'
+    },
+    text: 'Monash University Clayton Campus',
+    place_name: 'Monash University Clayton Campus, Wellington Rd, Melbourne, Victoria 3168, Australia',
+    center: [ 145.13360699999998, -37.91063 ],
+    geometry: { coordinates: [Array], type: 'Point' },
+    context: [ [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+</pre>
+
+* 2. Update Error message.
