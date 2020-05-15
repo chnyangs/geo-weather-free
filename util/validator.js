@@ -10,9 +10,9 @@ exports.isCoordinate = (coordinate) => {
 }
 
 exports.isWeatherApiKey = (api_key) => {
-    return ((api_key.length == 32) && (api_key.indexOf('bf') == 0))
+    return (api_key.indexOf('bf') == 0)
 }
 
 exports.isGeoApiKey = (api_key) => {
-    return ((api_key.length == 90) && (api_key.indexOf('pk.') == 0) && (api_key.split('.').length == 3))
+    return ((api_key.indexOf('pk.') == 0) && (api_key.split('.').length == 3))
 }
