@@ -2,6 +2,9 @@
 
 Based on the free API WeatherStack and MapBox
 
+# Update History
+[V1.0.3](#V1.0.3 Updates)
+
 # Features
 
 * Get coordinate by address.
